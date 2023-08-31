@@ -1,13 +1,74 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #4a3333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: aliceblue;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+header:hover {
+  transform: scale(1.4);
+  background-color: #4a3333;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  box-shadow: rgba(213, 196, 196, 0.25) 0px 54px 55px,
+    rgba(165, 152, 152, 0.12) 0px -12px 30px,
+    rgba(179, 157, 157, 0.12) 0px 4px 6px,
+    rgba(235, 231, 231, 0.17) 0px 12px 13px,
+    rgba(222, 216, 216, 0.09) 0px -3px 5px;
+}
+.user-list ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.user-list ul li {
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.user-list ul li:hover {
+  transform: scale(1.1);
+  background-color: #4a3333;
+  box-shadow: rgba(213, 196, 196, 0.25) 0px 54px 55px,
+    rgba(165, 152, 152, 0.12) 0px -12px 30px,
+    rgba(179, 157, 157, 0.12) 0px 4px 6px,
+    rgba(235, 231, 231, 0.17) 0px 12px 13px,
+    rgba(222, 216, 216, 0.09) 0px -3px 5px;
+}
+.single-user {
+  display: flex;
+  width: 500px;
+  background-color: #333;
+  border-radius: 10px;
+  margin: 5px;
+}
+.user-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  color: aliceblue;
+}
+.user-mail-bold {
+  font-weight: bold;
 }
