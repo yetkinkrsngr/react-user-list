@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #4a3333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: aliceblue;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+header:hover {
+  transform: scale(1.4);
+  background-color: #4a3333;
+
+  box-shadow: rgba(213, 196, 196, 0.25) 0px 54px 55px,
+    rgba(165, 152, 152, 0.12) 0px -12px 30px,
+    rgba(179, 157, 157, 0.12) 0px 4px 6px,
+    rgba(235, 231, 231, 0.17) 0px 12px 13px,
+    rgba(222, 216, 216, 0.09) 0px -3px 5px;
+}

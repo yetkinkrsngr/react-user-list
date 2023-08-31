@@ -1,7 +1,7 @@
 import "./App.css";
 //component
 import Header from "./components/header";
-import UserList from "./components/UserList";
+import UserList from "./components/user/list";
 function App() {
   return (
     <>

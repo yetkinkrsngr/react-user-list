@@ -1,6 +1,8 @@
 import React from "react";
 // Bu satırda React kütüphanesinden 'react' adında bir nesne içe aktarılıyor.
 // Bu, React bileşenlerini oluşturmak ve kullanmak için gerekli olan temel işlevleri içerir.
+import "./index.css";
+//css dosyasını import ettik
 const Header = () => {
   return (
     <header>
